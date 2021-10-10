@@ -1,3 +1,5 @@
+// this program is to check the biggest number, with the do_while loop.
+
 #include <iostream>
 using namespace std;
 int main() {
