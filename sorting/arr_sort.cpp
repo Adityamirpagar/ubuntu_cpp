@@ -1,4 +1,4 @@
-// sorting an array using bubble sort alogithms.
+// sorting an array using bubble sort alogrithms.
 
 #include <iostream>
 using namespace std;
