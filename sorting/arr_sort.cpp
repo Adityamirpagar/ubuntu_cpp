@@ -27,6 +27,7 @@ for(int i = 0; i < n; i++){
 
 // creating a temporary variable
 int t_var;
+    
 //bubble sort
 for (int i = 0; i < n; i++){
     for (int j = i + 1; j < n; j++){
@@ -37,10 +38,14 @@ for (int i = 0; i < n; i++){
         }
     }
 }
+    
+   //printing the sorted order of elements.
 
 cout << "\n\nThe sorted array of your elements, in ascending order are: \n";
 
 for (int i = 0; i < n; i ++)
     cout << arr[i] << "    ";
 cout << endl;
+    
+    
 }
