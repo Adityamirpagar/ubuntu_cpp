@@ -31,7 +31,7 @@ int t_var;
 //bubble sort
 for (int i = 0; i < n; i++){
     for (int j = i + 1; j < n; j++){
-        if(arr[i] > arr[j]){
+        if(arr[i] > arr[j]){    //change the comparision operator, ">" for ascending order: "<" for descending oder.
             t_var = arr[i];
             arr[i] = arr[j];
             arr[j] = t_var;
