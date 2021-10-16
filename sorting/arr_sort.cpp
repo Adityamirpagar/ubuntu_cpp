@@ -25,7 +25,7 @@ for(int i = 0; i < n; i++){
     cout << arr[i] << "    ";
 }
 
-// creating a temporary variable
+// creating a temporary variable, as a auxillary storage.
 int t_var;
     
 //bubble sort
