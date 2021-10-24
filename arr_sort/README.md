@@ -1,8 +1,8 @@
 # **Vector in CPP**
 
-Each time we create a variable in cpp, it can hold only one valuea at a time. This variable are called scalar.  
+Each time we create a variable in cpp, it can hold only one value at a time. That are scalar.  
 
-But cpp provides us a function that can hold multiple value in a sinbgle variable, this is known as vector.
+But cpp provides us a function that can hold multiple value in a single variable, this is known as vector/array.
 
 "Vector is the collection of elements, but each element is scalar."   
 OR
@@ -50,7 +50,7 @@ int number[5];
 
 Each element in the vector can be assigned value's, using their position. The vector start's from the position 0. So, how to assign the value now that we've the position.
 
-### **` *indexing*** 
+### ***indexing*** 
 
 The value inside the brecket which is used to select each element of the vector is known as index.  
     
@@ -123,7 +123,7 @@ for(int i = 0; i < 100; i++){
 
 ### **Sum of all elements of a vector**
 
-To calculte the sum of all element we'll use a variabl that will store the sum. At each iteration.
+To calculte the sum of all element we''ll use a variabl that will store the sum. At each iteration.
 
 ````cpp
 vector <int> number {0,1,2,3,4};
