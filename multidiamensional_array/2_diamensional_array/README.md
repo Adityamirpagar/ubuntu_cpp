@@ -7,7 +7,7 @@ Imagine a weather station has a machin the takes reading of the air temperature 
 
 ```cpp
 // make a 2d array for 31 days each day has 24 hours individual.
-vector<vector<flaot>> air_temp(31, vector<float>(24));
+vector<vector<float>> air_temp(31, vector<float>(24));
 ```
 
 **2. calculate the average monthly temperature of noon. i.e., at 11 am.**
@@ -31,6 +31,7 @@ cout <<"The aveage air temp at noon, for month is: " << average << endl;
 **3. Determine the highest temperatue of the whole month.**
 
 ```cpp
+
 // Determine the highest temperature of the whole month.
 float highest_temp = 40;
 // loop through each hour, of each day.
@@ -58,5 +59,16 @@ for(int day = 0; day < 31; day++){
         }
     }
 }
-cout << "The number of the days that were above 20 degree C is: " << hotdays << end;
+cout << "The number of the days that were above 20 degree C is: " << hotdays << endl;
+```
+
+**4. Fill the entire array with zero, for use for next month.**
+
+```cpp
+// Fill the entire array with zeros
+for(int d = 0; d<31; d++){
+    for(int h=0; h<24;h++){
+        air_temp[d][h] = 0;
+    }
+}
 ```
