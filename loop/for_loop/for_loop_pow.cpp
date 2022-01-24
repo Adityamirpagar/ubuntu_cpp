@@ -1,14 +1,20 @@
-// This program gives the value of the exponents of 2.
+// This program gives exponent for 2
+#include<iostream>
+#include<vector>
 
-#include <iostream>
+using namespace std;
 
 int main() {
+
+int n = 0;
 int pow = 1;
-    for(int i =0; i < 17 ; i ++){
+cout << "Enter the exponent: ";cin >> n;
 
-        std::cout << "2 to the power of " << i << " is " << pow << std::endl;
-        
-        pow *= 2;
-    }
+for(int i =0; i < n; i++){
+    pow *= 2;
+    cout << "2 raise to the power of " << i+1 << " is " << pow << endl;
+    
+}
 
+return 0;
 }
