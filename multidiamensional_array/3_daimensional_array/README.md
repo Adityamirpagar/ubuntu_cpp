@@ -2,6 +2,23 @@
 
 Imagine a huge hotel with 3 buildings. And each building has 15, and each floor has 20 rooms.
 
+**How many rooms are there in the 3 buldings.**
+
+```cpp
+// Total no. of rooms
+int rooms = 0;
+
+for(int b = 0; b < 3; b++){
+    for(int f = 0; f < 15; f++){
+        for(int r = 0; r < 20; r++){
+            rooms++;
+        }
+    }
+}
+cout <<"There are total " << rooms << endl;
+```
+
+
 **1. We have to create an array that can hold the info for all the rooms, in all 3 buildings.**
 
 ```cpp
