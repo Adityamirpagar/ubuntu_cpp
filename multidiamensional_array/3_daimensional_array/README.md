@@ -65,6 +65,6 @@ for(int r = 0; r < 20; r++){
         vacancies++;
     }
 }
-cout <<"There are " << vacancies << " on the 15th floor of 2nd bulding. " << endl;
+cout <<"There are " << vacancies << " rooms empty on the 15th floor of 2nd bulding. " << endl;
 ```
 
