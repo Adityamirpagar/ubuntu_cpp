@@ -8,7 +8,13 @@ Imagine a huge hotel with 3 buildings. And each building has 15, and each floor 
 // Total no. of rooms
 int rooms = 0;
 
-for(int b = 0; b < 3; b++){
+/*
+b is for buildings,
+f is for floor,
+And, r is for room.
+*/
+
+for(int b = 0; b < 3; b++){ 
     for(int f = 0; f < 15; f++){
         for(int r = 0; r < 20; r++){
             rooms++;
