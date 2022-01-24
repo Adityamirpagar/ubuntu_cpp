@@ -1,4 +1,4 @@
-// This program gives the value of the ecponents of 2.
+// This program gives the value of the exponents of 2.
 
 #include <iostream>
 
