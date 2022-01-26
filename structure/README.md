@@ -1,4 +1,4 @@
-# Structure in CPP.
+# Structure in CPP
 
 **A structure is an aggregate of different elememts of different type. Each of these element is called a field(member). Each field(member) is identified by its unique name, not numbers(index).**
 
