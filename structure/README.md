@@ -311,13 +311,20 @@ Date moon_landing = {1969, 7, 20};
 
 Student he = {"bond", 3.5, 7};
 
+Sudent she = {};
+
     cout << "Moon landing date: ";
     cout << moon_landing.year << "/"<< moon_landing.month << "/" << moon_landing.day << endl;
 
-    cout << "\nStudent ";
+    cout << "\nHe Student ";
     cout <<"\n\nName: " <<he.student_name << endl;
     cout <<"Time spent: " << he.time_spent << endl;
     cout <<"Recent chapter: " << he.recent_chapter << endl;
+    
+    cout << "\nShe Student";
+    cout <<"\n\nName: " << she.student_name << endl;
+    cout <<"Time spent: " << she.time_spent << endl;
+    cout << "Recent cahpter: " << she.recent_chapter << endl;
 
 return 0;
 }
