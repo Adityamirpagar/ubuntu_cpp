@@ -274,3 +274,51 @@ cout << "Recent chapter: " << stdnt[0].recent_chapter << endl;
 return 0;
 }
 ```
+## Initiator for structure.
+
+Strucure can be initialized as **at the time of declaration**. The structure initaitor is enclosed in curly brackets and contains a **list of values assigned to the subsequent fields**, starting from the the first.
+
+* The values listed in the initiator **must conform to the type** of the fields. 
+
+* If the initiator contains fewer elements than the number of the structure field, it's presumed that the list is automatically extende with zeros.
+    * it means that the empty structure initializer (<code>{}</code>) will zero all the structure fields.
+
+**E.g,**
+
+```cpp
+// Initiator for the structure.
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+struct Date {
+    int year;
+    int month;
+    int day;
+};
+
+struct Student {
+    char student_name [50];
+    float time_spent;
+    int recent_chapter;
+};
+
+
+int main(){
+
+Date moon_landing = {1969, 7, 20};
+
+Student he = {"bond", 3.5, 7};
+
+    cout << "Moon landing date: ";
+    cout << moon_landing.year << "/"<< moon_landing.month << "/" << moon_landing.day << endl;
+
+    cout << "\nStudent ";
+    cout <<"\n\nName: " <<he.student_name << endl;
+    cout <<"Time spent: " << he.time_spent << endl;
+    cout <<"Recent chapter: " << he.recent_chapter << endl;
+
+return 0;
+}
+```
