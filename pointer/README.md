@@ -16,7 +16,7 @@ The important difference between the values and address of a variable is that : 
 
 ## Declaration of Pointer
 
-To declare a pointer an astrisk <code>( * )</code> is put in front of the name. And use prefix <code>ptr_ </code> (ptr underscore) to not get confused, with other varibles.
+To declare a pointer an astrisk <code>( * )</code> is put in front of the name. And we'll use prefix <code>ptr_ </code> (ptr underscore) to not get confused, with other varibles.
 
 - Here is how we can declare pointers.
 
