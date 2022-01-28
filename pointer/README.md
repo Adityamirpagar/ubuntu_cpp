@@ -29,7 +29,7 @@ int *ptr_p;
 >> ```cpp
 >>int* ptr_p; 
 >>```
->> The position of the astrisk does not affect the pointer itsef, if declared individually.
+>> The position of the astrisk does not affect the pointer itself, if declared individually.
 
 - In the above statements, we've declared pointer <code>ptr_p</code> of the <code>int</code> type.
 
