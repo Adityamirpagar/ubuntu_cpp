@@ -37,7 +37,7 @@ vector<int>::iterator iter;
 iter = num.begin();
 ```
 
-**2. <>end()<> function**
+**2. <code>end()</code> function**
 
 The <code>end()</code> function returns the *theorotical*, last element of the vector.
 
