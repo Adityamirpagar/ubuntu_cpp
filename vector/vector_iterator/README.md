@@ -8,7 +8,7 @@ Iterators are used to point to memory address of an element. They are somewhat l
 vector<T>::iterator iterator_name;
 ```
 
-- if we've 2 different vector <>int<> and <>float<>, Then we'll use 2 different iterators corrosponding to the data type of the vector.
+- if we've 2 different vector <code>int</code> and <code>float</code>, Then we'll use 2 different iterators corrosponding to the data type of the vector.
 
 ```cpp
 // Iterator for int.
