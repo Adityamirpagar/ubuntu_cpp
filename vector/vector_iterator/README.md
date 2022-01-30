@@ -56,7 +56,7 @@ iter2 = num.end() - 1;
 ```cpp
 iter2 = num.end() - 1;
 ```
-- This is beacause the nature of the <>end<> function, it prints the theorotical value, that should not be accessed. To counter this we have to use <code> -1 </code>.
+- This is beacause the nature of the <code>end</code> function, it prints the theorotical value, that should not be accessed. To counter this we have to use <code> -1 </code>.
 
 - This tells the <code>end()</code> functio to stop <code> 1 </code> postion before the theorotical value.
 
