@@ -1,5 +1,6 @@
 // write a program to check the bigger number, with 5 inputs.
 // loop basic
+//conditional statement
 #include <iostream>
 
 using namespace std;
