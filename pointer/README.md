@@ -16,7 +16,7 @@ The important difference between the values and address of a variable is that : 
 
 ## Declaration of Pointer
 
-To declare a pointer an astrisk <code>( * )</code> is put in front of the name. And we'll use prefix <code>ptr_ </code> (ptr underscore) to not get confused, with other varibles.
+To declare a pointer an astrisk <code>( * )</code> is put in front of the name. And use prefix <code>ptr_ </code> (ptr underscore) to not get confused, with other varibles.
 
 - Here is how we can declare pointers.
 
@@ -29,7 +29,7 @@ int *ptr_p;
 >> ```cpp
 >>int* ptr_p; 
 >>```
->> The position of the astrisk does not affect the pointer itself, if declared individually.
+>> The position of the astrisk does not affect the pointer itsef, if declared individually.
 
 - In the above statements, we've declared pointer <code>ptr_p</code> of the <code>int</code> type.
 
@@ -186,7 +186,6 @@ Content of the address pointed to by ptr_p (*ptr_r) = 5
 >>* (<code>*</code>) is the reference operator, and can be read as "address of".
 >>* (<code>&</code>) is the dereference operator, and can be read as "value at address" or "value pointed by".
 
-
 ****
 
 ## Ponter vs Vectors : Similarities and Differences
@@ -269,13 +268,17 @@ OUTPUT :
 The pointer is significantly different from the integers arithmetic as it is relatively reduced and allows the following operation only: 
 
  **operations**
-- **Addition** : Adding an intiger value to a pointer, giving a pointer (ptr + int -> ptr).
 
-- **Substraction** : Substracting an intger value from the pointer, giving a pointer (ptr - int -> ptr)
+> **Addition** : 
+>* Adding an intiger value to a pointer, giving a pointer (ptr + int -> ptr).
 
-- Substracting a pointer from a pointer, giving an integer(ptr - ptr -> int) 
+> **Substraction** : 
+>* Substracting an intger value from the pointer, giving a pointer (ptr - int -> ptr).
+> * Substracting a pointer from a pointer, giving an integer(ptr - ptr -> int) 
 
-- **Comparision**: Comparing the two pointers for equality or inequality, this gives a value type <code>int</code> (ptr == ptr -> int; ptr != ptr -> int).
+> **Comparision**: 
+>* Comparing the two pointers for equality or inequality, this gives a value type <code>int</code> (ptr == ptr -> int; ptr != ptr -> int).
+
 
 **Note: apart form this any other opertaion are forbidden or meaningless**
 
@@ -322,6 +325,41 @@ return 0;
 }
 ```
 
+****
 
+**Conclusion**
 
+*We reach the conclusion that pointers can behave like vectors sometime and vice versa.*
+
+Let's assume that the ptr1 pointer points to the second elemnet of the <code>arrray</code> vector. We want to dereference it and fetch the value residing at the address the pointer currently contains. We can do it in the following way:
+
+```cpp
+int  value = *ptr1;
+```
+
+Now, if we want to dereference the value that is located one element after the current pointer indication. This can be done in following way:
+
+```cpp
+value = *(ptr1 + 1);
+```
+
+- This will print the next element in the array.
+
+This happens beacause the, C++ language assumes that the operation described as:
+
+```cpp
+*(pointer + offset)
+```
+
+is a synonym of
+
+```cpp
+pointer [offset]
+```
+
+This means that the previous assigment can be written as:
+
+```
+value = ptr1[1];
+```
 
