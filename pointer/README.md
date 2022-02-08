@@ -185,3 +185,143 @@ Content of the address pointed to by ptr_p (*ptr_r) = 5
 > **In short**: 
 >>* (<code>*</code>) is the reference operator, and can be read as "address of".
 >>* (<code>&</code>) is the dereference operator, and can be read as "value at address" or "value pointed by".
+
+
+****
+
+## Ponter vs Vectors : Similarities and Differences
+
+Pointer and vectors have a lot in common, such as a vectors method named <code>data()</code> points to the address of the first element in the array.
+
+Example:
+
+```cpp
+    vector<int> arr{5,4,3,2,1};
+
+    int * ptr = arr.data();
+```
+
+- In the above code the pointer <code>ptr</code> holds the address pointed by the <code>arr.data</code> i.e, address for the first element in the array.
+
+The same effect can be achived by applying <code>&</code>(reference) operator to the <code>arr[0]</code>
+
+```cpp
+int *ptr = &arr[0];
+```
+**Example: The following code will tell if both the pointers are equal or not**
+
+```cpp
+// Vector vs Pointers : Similarities and Differences
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main() {
+
+// vector
+    vector<int> arr{5,4,3,2,1};
+
+    int * ptr1 = arr.data();
+    int *ptr2 = &arr[0];
+
+// Print true if pointer ptr1 and ptr2 are equal, else print false
+    cout << boolalpha << (ptr1 == ptr2) << endl;
+
+return 0;
+}
+```
+**Output**
+```
+true
+```
+
+> Here we've assigned the address of first element in vector via two methods :
+>> 1. Using <code>arr.data()</code> (vector method <code>data()</code>)
+>> 2. Using <code>&arr[0]</code> (reference operator (<code>&</code>))
+
+**Note : The position of the <code>arr.data()</code> can be changed using (addition) <code>+</code>, operator. E.g,**
+
+```cpp
+    vector<int> arr{5,4,3,2,1};
+
+    int * ptr = arr.data() + 2; // using vector method
+
+    cout << *ptr << endl; // print the elemnt held at the position.
+```
+
+- The above code is equivalent to :
+
+```cpp
+    int * ptr = &arr[2]; //using reference operator
+```
+
+OUTPUT :
+
+```
+    3
+```
+
+****
+
+## The Arithmetic Operation for Pointer 
+
+The pointer is significantly different from the integers arithmetic as it is relatively reduced and allows the following operation only: 
+
+ **operations**
+- **Addition** : Adding an intiger value to a pointer, giving a pointer (ptr + int -> ptr).
+
+- **Substraction** : Substracting an intger value from the pointer, giving a pointer (ptr - int -> ptr)
+
+- Substracting a pointer from a pointer, giving an integer(ptr - ptr -> int) 
+
+- **Comparision**: Comparing the two pointers for equality or inequality, this gives a value type <code>int</code> (ptr == ptr -> int; ptr != ptr -> int).
+
+**Note: apart form this any other opertaion are forbidden or meaningless**
+
+**Example of operations in pointers**
+```cpp
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int main() {
+    vector <int> arr{1,2,3};
+
+    int *ptr1 = arr.data(); //ptr1 is at arr[0]
+    int *ptr2;
+
+// both the pointers are now at the same position
+ptr2 = ptr1; // ptr2 is also now at arr[0]
+
+// addition: ptr2 is shifted by 1 place right
+ptr2 = ptr2 + 1; // ptr2 is now at arr[1]
+
+// incrementation: ptr2 is again shifted by 1 place right
+ptr2++; //ptr2 is now at arr[2]
+
+// substraction: ptr2 is shifted 1 place to the left
+ptr2 = ptr2 - 1; // ptr2 is now at arr[1]
+
+
+// addition: ptr1 is shifted 1 palce to the right.
+ptr1 = ptr1 + 2; // ptr1 is now at arr[2]
+
+cout << "Final value of the ptr1 is: " << *ptr1<< endl; // final position of the pointer ptr1 is arr[2]
+
+cout << "Final value of the ptr2 is: " << *ptr2<< endl; // final position of the pointer ptr2 is arr[1]
+
+// Comparision: ptr1 is compared with ptr, using tenory operator
+
+string result = (ptr1 == ptr2) ? "is equal to" : "is not equal to";
+
+cout << "ptr1 "  << result << " ptr2" << endl;  
+
+return 0;
+}
+```
+
+
+
+
