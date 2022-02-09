@@ -206,7 +206,7 @@ Virtually any data could be used as a structure's field (member): Scaler, Vector
 
 ```cpp
 // Declaring a vector containg structure.
-vector{Stddent} <stdnt>(100'000);
+vector{Student} <stdnt>(100'000);
 ```
 
 ### Accessing the fields inside the vector structure.
