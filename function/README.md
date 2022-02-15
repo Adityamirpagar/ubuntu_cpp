@@ -96,7 +96,7 @@ return 0;
 ****
 ****
 
-## C++ User-defined function
+## 1. C++ User-defined function
 
 A user-defined function groups code to perform a specific task, and that group of code is given a name (identifier).
 
