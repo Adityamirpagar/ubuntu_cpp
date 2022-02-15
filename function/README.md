@@ -56,13 +56,13 @@ Each function is characterized by the following traits:
 
 A function parameter(argument) is a value that can be passed when declaring the function.
 
-``cpp
+```cpp
 void func(int num){
     cout << num << endl;
 }
 ```
 
-Here, the <code>int</code> variable <>num<> is the function parameter.
+Here, the <code>int</code> variable <code>num</code> is the function parameter.
 
 we pass a value to the function variable while calling the function.
 
