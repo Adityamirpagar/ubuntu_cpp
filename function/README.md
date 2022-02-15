@@ -1,5 +1,7 @@
 # Function
 
+*Note : parameter and arguments are synonyms, they are being used interchagabaly throught the article.*
+
 Function is kind of a box that can do something useful for us, e.g, to evaluate a value or perform some actions.
 
 *In programming language (cpp) a fuction is a block of code that is used to evaluate some varibles or do a specific task or both. A function can be identified by its name.*
