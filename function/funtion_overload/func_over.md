@@ -100,7 +100,7 @@ c = 15
 ```
 
 
-###  2 . **The type of argument:** for example, if there are two function with same name and, same number of parameters. The target function is selected on the basis of the **parameters type conformity.**
+**2 . **The type of argument:** for example, if there are two function with same name and, same number of parameters. The target function is selected on the basis of the **parameters type conformity** :**
 
 **Example: parameters type conformity**
 
