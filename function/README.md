@@ -52,6 +52,50 @@ Each function is characterized by the following traits:
 
 ****
 
+## Function Parameters
+
+A function parameter(argument) is a value that can be passed when declaring the function.
+
+``cpp
+void func(int num){
+    cout << num << endl;
+}
+```
+
+Here, the <code>int</code> variable <>num<> is the function parameter.
+
+we pass a value to the function variable while calling the function.
+
+**Example**
+
+```cpp
+#include<iostream>
+
+using namespace std;
+
+// defining the function
+void func(int num){
+    cout << num << endl;
+}
+
+int main() {
+    int n = 7;
+    func(n); //calling funciton and passing the parameter
+
+return 0;
+}
+```
+- Here, the output will be 7, 'cause in the main function we've called the <code>func()</code> function, and passed the argument variable <code>n</code>, which holds the value 7.
+
+**Output**
+
+    7
+
+
+
+****
+****
+
 ## C++ User-defined function
 
 A user-defined function groups code to perform a specific task, and that group of code is given a name (identifier).
