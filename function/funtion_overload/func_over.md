@@ -32,7 +32,7 @@ double func(int a) {} // return type is double, and argument is int
 
 ## What compiler takes into consideration while choosing the one target function.
 
-### 1. **The number of argument**: for example, if there are three overloaded fuctions with 2, 3, and 4 parameters respectively. And the invocation specifies two arguments, So only the function  that has 2 parameter may be used as a target. This process of selecting function is called *the best candidate*
+**1. **The number of argument**: for example, if there are three overloaded fuctions with 2, 3, and 4 parameters respectively. And the invocation specifies two arguments, So only the function  that has 2 parameter may be used as a target. This process of selecting function is called *the best candidate*:**
 
 **Example for the best candidate**
 
