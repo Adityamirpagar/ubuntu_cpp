@@ -398,7 +398,7 @@ A
 
 ****
 
-## Creating a floyds triangle
+## Creating a floyd's triangle
 
 ```cpp
 // floyds triangle
